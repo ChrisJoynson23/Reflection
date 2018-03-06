@@ -1,0 +1,39 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	It adds the hidden folder .git in order to start recording history for files. Without this it has nowhere to 
+	put the metadata for holding the history of the file.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+	The staging area is the intermediate area where files are stored prior to adding them to the repository and
+	making the first commit with them. It allows you to control the commit and the commit message.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+	You can load one change into the staging area at a time, so that it creates a commit per change in files.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+	Would be helpful when wanting to create different versions of the same project or wish to experiment with 
+	a new feature. Branches let you experiment with these things while keeping the original code in tact and 
+	still functional if you want to show them to someone else.
+
+How do the diagrams help you visualize the branch structure?
+
+	They clearly show the structure of the work flow as well as which commits are parents to which.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+	It adds the files together based upon comparing them to the commit before the branch first started.
+	Looking at which files have been added and removed compared to that first commit. When the branches
+	are merged together it is best to add them to the master which is why it is shown as it is on the diagram.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+
+	Git does a lot of the work for you, but does ask you about any conflicts. Manually merging would take a lot
+	of time and require going through both sets of code line by line looking for differences.
